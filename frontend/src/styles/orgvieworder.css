@@ -1,0 +1,104 @@
+/* Page Wrapper */
+.org-orders-page {
+  padding: 35px 50px;
+  background-color: #f9fafc;
+  min-height: 100vh;
+}
+
+/* Page Heading (Centered) */
+.view-orders-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 35px;
+  color: #111;
+  letter-spacing: 1px;
+  text-align: center; /* CENTER */
+}
+
+/* Grid Layout */
+.org-order-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+/* Card */
+.org-order-additem {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #eee;
+}
+
+.org-order-additem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.12);
+}
+
+/* Product Image */
+.org-order-additem img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Product Title */
+.org-order-additem h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin: 14px 16px 8px;
+  text-align: left;
+}
+
+/* Text Content */
+.org-order-additem p {
+  font-size: 16px;
+  color: #444;
+  margin: 6px 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Labels */
+.org-order-additem strong {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Price Highlight */
+.org-order-additem p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a8a3a;
+  margin-bottom: 16px;
+}
+
+/* Sold Out Text */
+.sold-out-text {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .org-orders-page {
+    padding: 20px;
+  }
+
+  .view-orders-title {
+    font-size: 24px;
+  }
+
+  .org-order-additem h1 {
+    font-size: 18px;
+  }
+
+  .org-order-additem p {
+    font-size: 15px;
+  }
+}

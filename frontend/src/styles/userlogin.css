@@ -1,0 +1,122 @@
+/* ===== FULL PAGE BACKGROUND ===== */
+.user-img {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* ===== GLASS LOGIN BOX ===== */
+.user-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 35px 40px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===== FORM STRUCTURE ===== */
+.user-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TITLE ===== */
+.user-login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== LABELS ===== */
+.user-login-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* ===== INPUTS ===== */
+.user-login-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.user-login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 208, 132, 0.5);
+  transform: scale(1.01);
+}
+
+/* ===== ERROR TEXT ===== */
+.user-login-form p {
+  color: #ffb3b3;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.user-login-form button {
+  background-color: #00d084;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.user-login-form button:hover {
+  background-color: #00b874;
+  transform: translateY(-2px);
+}
+
+/* ===== REGISTER LINK ===== */
+.user-login-form h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.user-login-form h3 a {
+  color: #00ffb3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.user-login-form h3 a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+  .user-form {
+    padding: 25px 20px;
+  }
+}

@@ -1,0 +1,66 @@
+.userprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+    padding: 20px;
+}
+
+.profiledetailes {
+    background: #fff;
+    width: 520px;
+    
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+
+.user-dash-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.user-profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 3px solid #ddd;
+    background: white;
+}
+
+
+.user-info-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width:fit-content;
+    border-radius: 10px;
+    margin: 10px auto;
+
+    
+}
+
+.user-info-card p {
+    margin: 0;
+    font-size:large;
+    color: #444;
+    text-align: justify;
+    line-height:30px;
+}
+.profiledetailes button{
+     
+    margin: 20px 10px;
+    padding: 10px 10px;
+    background-color: #f29020;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,126 @@
+/* ===== PAGE BACKGROUND ===== */
+.org-img {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://hanoispiritofplace.com/wp-content/uploads/2018/04/hinh-nen-may-tinh-99.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* Hide normal image tag */
+.org-img img {
+  display: none;
+}
+
+/* ===== TRANSPARENT GLASS LOGIN BOX ===== */
+.organization-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 35px 40px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===== FORM LAYOUT ===== */
+.organization-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TITLE ===== */
+.organization-login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== LABELS ===== */
+.organization-login-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* ===== INPUT FIELDS ===== */
+.organization-login-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.organization-login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 208, 132, 0.5);
+  transform: scale(1.01);
+}
+
+/* ===== ERROR TEXT ===== */
+.organization-login-form p {
+  color: #ffb3b3;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.organization-login-form button {
+  background-color: #00d084;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.organization-login-form button:hover {
+  background-color: #00b874;
+  transform: translateY(-2px);
+}
+
+/* ===== REGISTER LINK ===== */
+.organization-login-form h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.organization-login-form h3 a {
+  color: #00ffb3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.organization-login-form h3 a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+  .organization-form {
+    padding: 25px 20px;
+  }
+}

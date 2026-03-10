@@ -1,0 +1,101 @@
+/* ===== Wrapper ===== */
+.admin-view-wrapper {
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 40px 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Header ===== */
+.admin-view-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.admin-view-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* ===== Back Button ===== */
+.admin-back-btn {
+  padding: 8px 18px;
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.admin-back-btn:hover {
+  background: #1a252f;
+  transform: translateY(-2px);
+}
+
+/* ===== Cards Container ===== */
+.admin-view-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* ===== Individual Card ===== */
+.admin-view-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-view-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Image ===== */
+.admin-view-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===== Card Content ===== */
+.admin-card-content {
+  padding: 20px;
+}
+
+.admin-card-content h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #34495e;
+}
+
+.admin-card-content p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.admin-card-content strong {
+  color: #2c3e50;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .admin-view-wrapper {
+    padding: 20px;
+  }
+
+  .admin-view-title {
+    font-size: 24px;
+  }
+}

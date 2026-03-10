@@ -1,0 +1,144 @@
+/* Page Wrapper */
+.user-accept-wrapper {
+  padding: 40px 60px;
+  background: white;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.user-accept-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Back Button */
+.user-back-btn {
+  position: absolute;
+  left: 0;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1b4332;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.user-back-btn:hover {
+  background-color: #2d6a4f;
+}
+
+/* Title */
+.user-accept-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1b4332;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+/* Container */
+.user-accept-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Card */
+.user-accept-card {
+  width: 75%;
+  max-width: 850px;
+  display: flex;
+  background: linear-gradient(135deg, #f4fff7, #e6f7ec);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.08);
+  border: 1px solid #d8f3dc;
+  transition: all 0.3s ease;
+}
+
+.user-accept-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 128, 0, 0.15);
+}
+
+/* Image */
+.user-accept-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Content */
+.user-card-content {
+  padding: 25px;
+  flex: 1;
+}
+
+.user-card-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 8px;
+}
+
+.user-card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.user-card-content p {
+  font-size: 15px;
+  margin: 6px 0;
+  color: #2d6a4f;
+  line-height: 1.6;
+}
+
+.user-card-content strong {
+  color: #081c15;
+}
+
+/* Price */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b9348;
+  margin-top: 8px;
+}
+
+/* Swap Section */
+.swap-section {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #b7e4c7;
+}
+
+.swap-text {
+  font-weight: 600;
+  color: #40916c;
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-accept-wrapper {
+    padding: 20px;
+  }
+
+  .user-accept-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .user-accept-card img {
+    width: 100%;
+    height: 200px;
+  }
+}

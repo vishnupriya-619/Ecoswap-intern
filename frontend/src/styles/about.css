@@ -1,0 +1,135 @@
+.about-page {
+  font-family: "Poppins", sans-serif;
+  color: #2c3e50;
+  background-color: #f8fff9;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  background: linear-gradient(135deg, #00d084 0%, #00b874 100%);
+  color: white;
+  padding: 80px 20px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-hero h1 span {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Intro Section */
+.about-intro {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Mission & Vision Section */
+.about-mission-vision {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.about-card {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-icon {
+  width: 40px;
+  height: 40px;
+  color: #00d084;
+  margin-bottom: 15px;
+}
+
+/* How It Works Section */
+.about-how {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e9f9ef;
+}
+
+.about-how h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.how-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.how-step {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.how-step:hover {
+  transform: translateY(-5px);
+}
+
+.how-icon {
+  width: 36px;
+  height: 36px;
+  color: #00d084;
+  margin-bottom: 10px;
+}
+
+.how-step h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.how-step p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-mission-vision, .how-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card, .how-step {
+    width: 85%;
+  }
+}
